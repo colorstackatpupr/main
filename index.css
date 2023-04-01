@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 html {
     font-family: 'IcielGothamUltra', sans-serif;
     width: 100%;
@@ -91,6 +95,13 @@ header h3 {
     margin-top: 50px;
 }
 
+header .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+
+
 header .button {
     font-size: 25px;
     background-color: #F7C92D;
@@ -100,6 +111,11 @@ header .button {
     text-decoration: none;
     width: 7%;
   }
+
+header #button2 {
+  background: #F7C92D;
+  color:black;
+}
 
   header h3 {
     transition: transform .3s;
@@ -114,7 +130,7 @@ header .button {
     display: flex;
     justify-content:flex-end;
     gap: 20px;
-    padding: 70px 3% 20px;
+    padding: 60px 3% 20px;
   }
 
   header svg {
@@ -478,6 +494,16 @@ header .button {
     text-align: center;
   }
 
+  footer ul a {
+    text-decoration: none;
+    color: white;
+  }
+
+  footer ul a:hover {
+    color:#104C9B;
+  }
+
+
   @media only screen and (max-width: 1105px) {
     #what-we-do {
       flex-direction: column;
@@ -549,11 +575,16 @@ header .button {
       padding-top: 30px;
     }
 
-
   }
 
   @media only screen and (max-width: 841px) {
+    header .buttons {
+      flex-direction: column;
+    }
 
+    header .lo {
+      margin-top: 25px;
+    }
     header .mobile-menu {
       display: block;
     }
