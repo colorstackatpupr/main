@@ -92,7 +92,7 @@
   }
   
   
-  
+
     /* Hamburger menu button styles */
   .hamburger-menu-btn {
     display: block;
@@ -188,45 +188,102 @@
     text-decoration: none;
   }
   
-  header #loginForm {
+
+/*****Upcoming Styles *********/
+
+#upcoming {
+    padding: 30px 5%;
+    color:white;
+}
+
+#upcoming .event {
     display: flex;
-    align-items: flex-end;
-    padding-left: 5%;
-  }
+    justify-content: space-around;
+    gap: 3%;
+    padding-top: 50px;
+}
 
-  header .inputs {
-    display: flex;
-    flex-direction: column;
-    margin: 0 30px;
-    width: 20%;
-  }
+#upcoming a {
+    width: 50px;
+    fill:white;
+}
 
-  header label {
-    color: white;
-    font-size: 20px;
-  }
+#upcoming a:hover {
+    fill:#091024;
+}
 
-  header #username, #password {
-    border-radius: 20px;
-    color: #091024;
-    height: 40px;
-    padding: 0 10px;
-  }
-
-  header #errorMessage {
-    padding-left:7%;
-  }
-
-  header .submit {
-    color:#091024 ;
-    border-radius: 20px;
+#upcoming .back {
     background-color: #F7C92D;
-    width: 10%;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+#upcoming  .image  {
+    border-radius: 40px;
+    width: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+#upcoming #image1 {
+  background-image: url(images/resume.jpg);
+}
+
+#upcoming #image2 {
+    background-image: url(images/linkedin.png);
+}
+
+#upcoming #image3 {
+    background-image: url(images/codingcompetition.jpg);
+}
+
+#upcoming #image1-pa {
+    background-image: url(images/infosession.jpg);
+}
+
+#upcoming .image div {
+    background-color: #104c9b69;
     text-align: center;
-    height: 40px;
-    font-size: 20px;
-  }
-  
+    width: 100%;
+    height: 250px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#upcoming h2{
+    font-size: 40px;
+    margin:0;
+}
+
+#upcoming .content {
+    width: 80%;
+}
+#upcoming .image h3 {
+    margin: 5px;
+    font-size: 30px;
+}
+
+#upcoming .headi {
+    display: flex;
+    align-items: center;
+}
+
+#upcoming .headi h3 {
+    margin: 10px;
+}
+
+#upcoming p {
+    font-size: 25px;
+    text-align: justify;
+}
   
     /*******Footer Styles********/
     footer {
@@ -301,9 +358,24 @@
   
     @media only screen and (max-width: 1105px) {
     
-    
-  
-  
+    #upcoming .event {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #upcoming .headi {
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #upcoming .headi h3 {
+        text-align: center;
+    }
+
+
       footer .contact-info {
         flex-direction: column;
         align-items: center;
@@ -336,7 +408,7 @@
   
     @media only screen and (max-width: 841px) {
        
-  
+
       header .buttons {
         flex-direction: column;
       }
@@ -360,28 +432,13 @@
         font-size: 30px;
       }
 
-      header #loginForm {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding:0;
-    }
-
-    header #loginForm .inputs {
-        width: 50%;
-        margin: 20px;
-    }
-
-    header #loginForm .submit {
-        width: 30%;
-        margin:20px;
-    }
-
-    header #errorMessage {
+      #upcoming h2 {
         text-align: center;
-        padding: 0 0 30px;
       }
-  
+    
+      #upcoming p  {
+        font-size: 20px;
+      }
   
   }
   

@@ -24,7 +24,7 @@
     }
   
   header {
-      background-image: url('images/event.jpg');
+      background-image: url('images/people.jpg');
       background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -92,7 +92,7 @@
   }
   
   
-  
+
     /* Hamburger menu button styles */
   .hamburger-menu-btn {
     display: block;
@@ -188,44 +188,113 @@
     text-decoration: none;
   }
   
-  header #loginForm {
-    display: flex;
-    align-items: flex-end;
-    padding-left: 5%;
-  }
 
-  header .inputs {
+/*****Summary Styles *********/
+#summary {
+    padding: 30px 5%;
+    background-color: #104C9B;
+}
+
+#summary h2 {
+    color:#F7C92D;
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+#summary p {
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/*******Our Team***********/
+#team {
+    background-color: #104C9B;
+    padding: 30px 5%;
+    color: white;
+}
+
+#team h2 {
+    color:#F7C92D;
+    font-size: 64px;
+}
+
+#team .members {
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+}
+
+#team img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+#team .members div {
     display: flex;
     flex-direction: column;
-    margin: 0 30px;
-    width: 20%;
-  }
+}
 
-  header label {
-    color: white;
-    font-size: 20px;
-  }
+#team .members h4 {
+    font-size: 30px;
+    margin: 0;
+}
 
-  header #username, #password {
-    border-radius: 20px;
-    color: #091024;
-    height: 40px;
-    padding: 0 10px;
-  }
+#team .apply {
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 0;
+}
 
-  header #errorMessage {
-    padding-left:7%;
-  }
+#team .apply h3 {
+    font-size: 30px;
+    margin: 0;
+}
 
-  header .submit {
+#team .apply a{
     color:#091024 ;
     border-radius: 20px;
     background-color: #F7C92D;
-    width: 10%;
+    padding: 10px;
+    text-decoration: none;
+    transition: transform .3s;
     text-align: center;
-    height: 40px;
+    width: 15%;
     font-size: 20px;
   }
+
+  #team .apply a:hover{
+    transform: translatey(-10px);
+    cursor: pointer;
+  }
+
+  #team .positions div {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #team .positions li {
+    font-size: 40px;
+  }
+
+  #team .positions h3 {
+    font-size: 45px;
+    color:#F7C92D;
+  }
+
+  #team .positions h4 {
+    font-size: 25px;
+    text-align: right;
+  }
+
+  #team .positions a {
+    text-decoration: none; 
+    color: #F7C92D;
+  }
+
+  #team .positions a:hover {
+   color: white;
+}
   
   
     /*******Footer Styles********/
@@ -300,10 +369,31 @@
   
   
     @media only screen and (max-width: 1105px) {
-    
-    
-  
-  
+        
+        #team .apply {
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+        }
+
+        #team .apply a {
+            margin-top: 30px;
+        }
+
+        #team .members {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #team .members div {
+            padding-top: 50px;
+        }
+
+        #team .positions div li {
+            font-size: 30px;
+        }
+
       footer .contact-info {
         flex-direction: column;
         align-items: center;
@@ -335,8 +425,35 @@
     }
   
     @media only screen and (max-width: 841px) {
-       
-  
+        #summary h2 {
+            text-align: center;
+        }
+
+        #summary p {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #team h2 {
+            text-align: center;
+        }
+
+        #team .apply a {
+            width: 30%;
+        }
+
+        #team .positions h3 {
+            text-align: center;
+        }
+
+        #team .positions div li {
+            font-size: 25px;
+        }
+
+        #team .positions h4 {
+            text-align: center;
+        }
+
       header .buttons {
         flex-direction: column;
       }
@@ -360,28 +477,9 @@
         font-size: 30px;
       }
 
-      header #loginForm {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding:0;
+      header .socials {
+        justify-content: space-around;
     }
-
-    header #loginForm .inputs {
-        width: 50%;
-        margin: 20px;
-    }
-
-    header #loginForm .submit {
-        width: 30%;
-        margin:20px;
-    }
-
-    header #errorMessage {
-        text-align: center;
-        padding: 0 0 30px;
-      }
-  
   
   }
   

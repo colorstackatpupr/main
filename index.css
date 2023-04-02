@@ -140,7 +140,7 @@ header #button2 {
   }
 
   header .socials svg:hover {
-    fill: #091024;
+    fill: #104C9B;
   }
 
 
@@ -257,7 +257,7 @@ header #button2 {
 }
 
 #upcoming-events .banner1 {
-  background-image: url('images/codingcompetition.jpg');
+  background-image: url('images/resume.jpg');
   height: 250px;
   border-radius: 40px;
   width: 100%;
@@ -609,7 +609,11 @@ header #button2 {
     }
     #access .employeers img {
       width: 60%;
-  }
+    }
+
+    header .socials {
+        justify-content: space-around;
+    }
 
   #what-we-do .goal p {
     font-size: 30px;
@@ -719,7 +723,7 @@ header #button2 {
   position: absolute;
   top: 70px;
   right: 0;
-  width: 30%;
+  width: 50%;
   max-width: 300px;
   background-color: #104C9B;
   z-index: 998;
