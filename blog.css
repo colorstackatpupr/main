@@ -24,7 +24,7 @@ body {
   }
 
 header {
-    background-image: url('images/event.jpg');
+    background-image: url('images/blog.jpg');
     background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -190,19 +190,90 @@ header h2 {
 
 
 /*****Blog Styles *********/
-#blog {
-  color: #41A39B;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 300px 0;
-}
 
-#blog h2 {
+#blog h1 {
   text-align: center;
+  font-size: 60px;
+}
+ #blog .row {
+  display: flex;
+  justify-content: space-around;
+ }
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 60px;
 }
 
+.container .square:hover {
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+     }
 
+
+     .container .square{
+  width: 417px;
+	height: 430px;
+	background: white;
+  border-radius: 4px;
+  box-shadow: 0px 20px 50px #D9DBDF;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+}
+
+.container .mask{
+  clip: rect(0px, 460px, 220px, 0px);
+  border-radius: 4px;
+  position: absolute;
+}
+
+.container img{
+  width: 417px;
+  }
+
+  .container .h1{
+  margin: auto;
+  text-align: left;
+  margin-top: 240px;
+  padding-left: 30px;
+  font-size: 24px;
+}
+.container p{
+ text-align: justify; 
+ padding-left: 30px;
+ padding-right: 30px;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 12px;
+ color: #C8C8C8;
+ line-height: 18px;
+}
+
+.container .button {
+    background-color: #104C9B;
+    color: white;
+    width: 90px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 70px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#blog  h4 {
+  padding-left: 30px;
+ }
   /*******Footer Styles********/
   footer {
     padding: 30px 67px;

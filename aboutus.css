@@ -24,7 +24,7 @@
     }
   
   header {
-      background-image: url('images/people.jpg');
+      background-image: url('images/aboutus.jpg');
       background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -193,6 +193,8 @@
 #summary {
     padding: 30px 5%;
     background-color: #104C9B;
+    display: flex;
+    gap: 3%;
 }
 
 #summary h2 {
@@ -205,6 +207,22 @@
     color: white;
     font-size: 40px;
     margin-top: 10px;
+}
+
+#summary .row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+#summary p {
+  text-align: center;
+}
+
+#summary svg {
+  height: 150px;
+  fill:#F7C92D;
 }
 
 /*******Our Team***********/
@@ -369,7 +387,16 @@
   
   
     @media only screen and (max-width: 1105px) {
-        
+        #summary {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #summary .row {
+          width: 100%;
+          padding-top: 50px;
+        }
         #team .apply {
            flex-direction: column;
            align-items: center;

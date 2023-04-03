@@ -23,13 +23,7 @@
       border-radius: 50px;
     }
   
-  header {
-      background-image: url('images/resources.jpg');
-      background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 714px;
-  }
+  
   
   header .mobile-menu {
     display: none;
@@ -73,21 +67,26 @@
   header li:hover {
       transform: translatey(-5px);
   }
+
+  #blog img {
+   width: 100%;
+   border-radius: 10px;
+  }
   
-  header .titles {
-      padding:100px 5%;
+  #blog .titles {
+    padding: 30px 5%;
     text-align: center;
   }
   
-  header h1 {
+  #blog h1 {
       font-size: 70px;
       color:#F7C92D;
       margin-bottom: 20px;
   }
   
-  header h2 {
+  #blog h2 {
       font-size: 40px;
-      color: white;
+      color: black;
       margin: 5px 0;
   }
   
@@ -188,45 +187,96 @@
     text-decoration: none;
   }
   
-  header #loginForm {
-    display: flex;
-    align-items: flex-end;
-    padding-left: 5%;
+  
+  /*****Blog Styles *********/
+  #blog {
+    padding: 60px 5%;
   }
-
-  header .inputs {
-    display: flex;
-    flex-direction: column;
-    margin: 0 30px;
-    width: 20%;
-  }
-
-  header label {
-    color: white;
-    font-size: 20px;
-  }
-
-  header #username, #password {
-    border-radius: 20px;
-    color: #091024;
-    height: 40px;
-    padding: 0 10px;
-  }
-
-  header #errorMessage {
-    padding-left:7%;
-  }
-
-  header .submit {
-    color:#091024 ;
-    border-radius: 20px;
-    background-color: #F7C92D;
-    width: 10%;
+  #blog h1 {
     text-align: center;
-    height: 40px;
-    font-size: 20px;
+    font-size: 60px;
+    margin-top:0;
+  }
+   #blog .row {
+    display: flex;
+    justify-content: space-around;
+   }
+
+   #blog p {
+    font-size: 25px;
+    text-align: justify;
+   }
+   
+  
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
   }
   
+  .container .square:hover {
+      -webkit-transform: translate(20px, -10px);
+      -ms-transform: translate(10px, -10px);
+      transform: translate(10px, -10px);
+      -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+       }
+  
+  
+       .container .square{
+    width: 460px;
+      height: 430px;
+      background: white;
+    border-radius: 4px;
+    box-shadow: 0px 20px 50px #D9DBDF;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+  }
+  
+  .container .mask{
+    clip: rect(0px, 460px, 220px, 0px);
+    border-radius: 4px;
+    position: absolute;
+  }
+  
+  .container img{
+    width: 460px;
+    }
+  
+    .container .h1{
+    margin: auto;
+    text-align: left;
+    margin-top: 240px;
+    padding-left: 30px;
+    font-size: 24px;
+  }
+  .container p{
+   text-align: justify; 
+   padding-left: 30px;
+   padding-right: 30px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 12px;
+   color: #C8C8C8;
+   line-height: 18px;
+  }
+  
+  .container .button {
+      background-color: #104C9B;
+      color: white;
+      width: 90px;
+      padding: 10px 18px;
+      border-radius: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-right: 70px;
+      font-size: 12px;
+      cursor: pointer;
+  }
   
     /*******Footer Styles********/
     footer {
@@ -359,29 +409,17 @@
       header h2 {
         font-size: 30px;
       }
-
-      header #loginForm {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding:0;
-    }
-
-    header #loginForm .inputs {
-        width: 50%;
-        margin: 20px;
-    }
-
-    header #loginForm .submit {
-        width: 30%;
-        margin:20px;
-    }
-
-    header #errorMessage {
-        text-align: center;
-        padding: 0 0 30px;
+      
+      #blog h1 {
+        font-size:38px;
       }
-  
+      #blog h2 {
+        font-size: 16px;
+      }
+
+      #blog p {
+        font-size: 20px;
+      }
   
   }
   
