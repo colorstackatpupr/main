@@ -218,7 +218,7 @@ header h2 {
 
 
      .container .square{
-  width: 417px;
+  width: 330px;
 	height: 430px;
 	background: white;
   border-radius: 4px;
@@ -235,7 +235,7 @@ header h2 {
 }
 
 .container img{
-  width: 417px;
+  width: 330px;
   }
 
   .container .h1{
@@ -406,6 +406,9 @@ header h2 {
       font-size: 30px;
     }
 
+    .container {
+      padding: 60px 0;
+  }
 
 }
 
