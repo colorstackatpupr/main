@@ -254,7 +254,6 @@ header #button2 {
   flex-direction: column;
   align-items:center;
   justify-content: space-evenly;
-  width: 100%;
 }
 
 #upcoming-events .banner1 {
@@ -296,6 +295,7 @@ header #button2 {
 
 #upcoming-events img {
   height: 200px;
+  width: 200px;
   border-radius: 40px;
  
 }
