@@ -13,7 +13,7 @@ var users = [
 ];
 
 // set the timer in seconds (10 minutes = 600 seconds)
-var timer = 600;
+var timer = 10;
 
 // function to validate the username and password
 function validate(username, password) {
