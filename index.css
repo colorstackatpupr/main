@@ -578,6 +578,9 @@ header #button2 {
   }
 
   @media only screen and (max-width: 841px) {
+    #upcoming-events .row .item {
+      width: 100%;
+  }
     header .buttons {
       flex-direction: column;
     }
@@ -608,7 +611,7 @@ header #button2 {
       flex-direction: column;
     }
     #access .employeers img {
-      width: 60%;
+      width: 80%;
     }
 
     header .socials {
