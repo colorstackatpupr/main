@@ -1,8 +1,15 @@
 // create an array of three random users
 var users = [
-	{username: "aguanill", password: "pass1", name: "Angel Guanill"},
-	{username: "dduran", password: "pass2", name: "Jane Smith"},
-	{username: "hrodriguez", password: "pass3", name: "Bob Johnson"}
+	{username: "aguanill", password: "Pass1", name: "Angel Guanill"},
+	{username: "dduran", password: "Pass2", name: "Dereck Duran"},
+	{username: "arodriguez", password: "Pass3", name: "Andrés Rodríguez"},
+	{username: "agavillan", password: "Pass4", name: "Anthony Gavillán"},
+	{username: "esoto", password: "Pass5", name: "Elyann Soto"},
+	{username: "eperez", password: "Pass6", name: "Edgard Pérez"},
+	{username: "hramos", password: "Pass7", name: "Hector Ramos"},
+	{username: "agarcia", password: "Pass8", name: "Abner García"},
+	{username: "avargas", password: "Pass9", name: "Ángel Vargas"},
+	{username: "dmejias", password: "Pass10", name: "Diego Mejías"}
 ];
 
 // set the timer in seconds (10 minutes = 600 seconds)
