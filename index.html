@@ -6,10 +6,7 @@
         <title>ColorStack at PUPR</title>
         <link rel="shortcut icon" href="images/tabicon.ico" type="image/x-icon">
         <link href="index.css" type="text/css" rel="stylesheet">
-    </head>
-
-    <!--What the user sees when entering the page-->
-    
+    </head>   
 
     <!--The content of the webpage, containing the about, interview, projects, technical and experience sections-->
     <body>
@@ -34,18 +31,6 @@
                 </div>
             </ul>
         </div>
-       
-        <script>
-            // Get the hamburger menu button and mobile menu list elements
-            const hamburgerBtn = document.querySelector('.hamburger-menu-btn');
-            const mobileMenuList = document.querySelector('.mobile-menu-list');
-
-            // Toggle the active class on the mobile menu list element when the hamburger menu button is clicked
-            hamburgerBtn.addEventListener('click', () => {
-            hamburgerBtn.classList.toggle('open');
-            mobileMenuList.classList.toggle('active');
-            });
-        </script>
 
         <div class="titles">
             <h1>ColorStack at PUPR</h1>
@@ -79,9 +64,20 @@
 
        <section id="access">
             <h2>By being part of ColorStack you'll have access to...</h2>
-            <div><h3>Dozens of opportunities shared every month</h3><img src="images/door.svg"></div>
-            <div><img src="images/file.svg"><h3>Submit your resume to Colorstack’s partner companies</h3></div>
-            <div><h3>Annual career fairs</h3><img src="images/handshake.svg"></div>
+            <div class="to">
+                <div>
+                    <img src="images/door.svg">
+                    <h3>Dozens of opportunities shared every month</h3>
+                </div>
+                <div>
+                    <img src="images/file.svg">
+                    <h3>Submit your resume to Colorstack’s partner companies</h3>
+                </div>
+                <div>
+                    <img src="images/handshake.svg">
+                    <h3>Annual career fairs</h3>
+                </div>
+            </div>
             <h3 class="final">And monthly workshops, webinars, and coaching sessions from industry leaders like:</h3>
             <div class="employeers">
                   <img src="images/codesignal.svg">
@@ -91,6 +87,7 @@
             </div> 
        </section>
 
+       <!--Upcoming Events Section-->
        <section id="upcoming-events">
             <div class="background">
                 <h2>Upcoming Events</h2>
@@ -121,6 +118,7 @@
             </div>
        </section>
 
+       <!--Professional Development Section-->
        <section id="professional-development">
             <div class="profi">
                 <h2>Professional Development</h2>
@@ -142,6 +140,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 150.6c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.7 96 32 96C14.3 96 0 110.3 0 128s14.3 32 32 32l306.7 0-41.4 41.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96zm-333.3 352c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 416 416 416c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0 41.4-41.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96z"/></svg>
         </section>
 
+        <!--Newsletter section-->
        <section id="newsletter">
             <h2>Want to be informed about ColorStack at PUPR?</h2>
             <h3><a class="button" href="https://mailchi.mp/e2428f505e30/join-colorstack-newsletter" target="_blank">Join Our Newsletter</a></h3>
@@ -168,8 +167,17 @@
             </div>
             <h4>© 2023, Colorstack at PUPR</h4>
         </footer>
+        <script>
+            // Get the hamburger menu button and mobile menu list elements
+            const hamburgerBtn = document.querySelector('.hamburger-menu-btn');
+            const mobileMenuList = document.querySelector('.mobile-menu-list');
+
+            // Toggle the active class on the mobile menu list element when the hamburger menu button is clicked
+            hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('open');
+            mobileMenuList.classList.toggle('active');
+            });
+        </script>
         <script src="index.js"></script>
     </body>
-
-    
 </html>
