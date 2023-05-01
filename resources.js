@@ -13,7 +13,8 @@ var users = [
 	{username: "csurillo", password: "Pass11", name: "Carlos Surillo"},
 	{username: "ldelatorre", password: "Pass12", name: "Luis de la Torre"},
 	{username: "aalvarez", password: "Pass13", name: "Anthony Álvarez"},
-	{username: "lgomez", password: "Pass14", name: "Luis Gomez"}
+	{username: "lgomez", password: "Pass14", name: "Luis Gomez"},
+	{username: "srivera", password: "Pass15", name: "Sandro Rivera"}
 ];
 
 // set the timer in seconds (10 minutes = 600 seconds)
