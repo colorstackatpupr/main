@@ -384,7 +384,7 @@ header h2 {
     
     #blog .row {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
 
     header .buttons {
