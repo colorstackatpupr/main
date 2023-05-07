@@ -362,6 +362,7 @@ header .socials {
   flex-direction: column;
   align-items:center;
   justify-content: space-evenly;
+  width: 260px;
 }
 
 #upcoming-events .banner1 {
@@ -378,7 +379,7 @@ header .socials {
 }
 
 #upcoming-events .banner2 {
-  background-image: url('images/codingcompetition.jpg');
+  background-image: url('images/speakeer.jpg');
   height: 250px;
   border-radius: 40px;
   width: 100%;
@@ -655,6 +656,11 @@ header .socials {
       display: none;
     }
 
+    #upcoming-events .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
     footer .contact-info {
       flex-direction: column;
       align-items: center;
@@ -696,9 +702,7 @@ header .socials {
   }
 
   @media only screen and (max-width: 841px) {
-    #upcoming-events .row .item {
-      width: 100%;
-  }
+    
     header .buttons {
       flex-direction: column;
     }

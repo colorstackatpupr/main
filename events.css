@@ -250,6 +250,10 @@
   background-image: url(images/resume.jpg);
 }
 
+#upcoming #image3-pa {
+  background-image: url(images/codingcompetition.jpg);
+}
+
 #upcoming .image div {
     background-color: #104c9b69;
     text-align: center;
