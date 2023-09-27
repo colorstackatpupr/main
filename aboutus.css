@@ -240,7 +240,7 @@
 #team .members {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #team img {
